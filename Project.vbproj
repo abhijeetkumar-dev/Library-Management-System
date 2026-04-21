@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1B5494F6-62FF-490A-8164-3E07074C371C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Project.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.vb">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminInterface.Designer.vb">
+      <DependentUpon>AdminInterface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AdminInterface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.vb">
+      <DependentUpon>Contact.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IssueReturnInterface.Designer.vb">
+      <DependentUpon>IssueReturnInterface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IssueReturnInterface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageBooksForm.Designer.vb">
+      <DependentUpon>ManageBooksForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageBooksForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageFines.Designer.vb">
+      <DependentUpon>ManageFines.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageFines.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageIssueReturnForm.Designer.vb">
+      <DependentUpon>ManageIssueReturnForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageIssueReturnForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageMembershipDetail.Designer.vb">
+      <DependentUpon>ManageMembershipDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageMembershipDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManagePurchaseForm.Designer.vb">
+      <DependentUpon>ManagePurchaseForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManagePurchaseForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUserForm.Designer.vb">
+      <DependentUpon>ManageUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Membership.Designer.vb">
+      <DependentUpon>Membership.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Membership.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OverdueFineForm.Designer.vb">
+      <DependentUpon>OverdueFineForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="OverdueFineForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentPurchaseBook.Designer.vb">
+      <DependentUpon>PaymentPurchaseBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentPurchaseBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentIssueBook.Designer.vb">
+      <DependentUpon>PaymentIssueBook.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentIssueBook.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProfileForm.Designer.vb">
+      <DependentUpon>ProfileForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.vb">
+      <DependentUpon>Register.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Register.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.vb">
+      <DependentUpon>User.vb</DependentUpon>
+    </Compile>
+    <Compile Include="User.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserBookDetail.Designer.vb">
+      <DependentUpon>UserBookDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserBookDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInterface.Designer.vb">
+      <DependentUpon>UserInterface.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserInterface.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserLogged.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminInterface.resx">
+      <DependentUpon>AdminInterface.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IssueReturnInterface.resx">
+      <DependentUpon>IssueReturnInterface.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageBooksForm.resx">
+      <DependentUpon>ManageBooksForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageFines.resx">
+      <DependentUpon>ManageFines.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageIssueReturnForm.resx">
+      <DependentUpon>ManageIssueReturnForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageMembershipDetail.resx">
+      <DependentUpon>ManageMembershipDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagePurchaseForm.resx">
+      <DependentUpon>ManagePurchaseForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUserForm.resx">
+      <DependentUpon>ManageUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Membership.resx">
+      <DependentUpon>Membership.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverdueFineForm.resx">
+      <DependentUpon>OverdueFineForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentPurchaseBook.resx">
+      <DependentUpon>PaymentPurchaseBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentIssueBook.resx">
+      <DependentUpon>PaymentIssueBook.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfileForm.resx">
+      <DependentUpon>ProfileForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserBookDetail.resx">
+      <DependentUpon>UserBookDetail.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInterface.resx">
+      <DependentUpon>UserInterface.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eye.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HIde.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\circle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\location.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\write-feedback.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\article.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book Detail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Issued Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Return Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book Renew.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notification.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\public-library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25927416.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91c5WfllYDL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\718j7m7yOIL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\414Ja4rUzBL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71+cVRf+GHL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\818Uz3cgAyL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-science-500x500 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7197GsAc0nL._UF1000,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1643122027Os85HlIs9y.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Manage Books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Membership.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lib-Member.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer_Sciene.png" />
+    <None Include="Resources\Indian_Law.jpg" />
+    <None Include="Resources\Great_War.jpg" />
+    <None Include="Resources\Indian_Geography.jpg" />
+    <None Include="Resources\Social_Engineering.png" />
+    <None Include="Resources\Indian_History.jpg" />
+    <None Include="Resources\Conscious_Mind.jpg" />
+    <None Include="Resources\Power_Time.jpg" />
+    <None Include="Resources\Quantum_Physics.jpg" />
+    <None Include="Resources\Search.jpg" />
+    <None Include="Resources\LibraryIcon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Java_Programming.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DBMS_Management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Statistical_Maths.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Introduction_Algorithms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Art_Computer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Compilers_Technique.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C_Programming.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_Pattern.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Operating_System.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Computer_Network.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mythical_Manmonth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Structure_Interpretation.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TheHidden_Language.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Purchase_Book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\The Sibley Guide.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mammals_NorthAmerica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insects.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mushrooms.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Freshwater_Fish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\National_Audubon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reptiles_Amphibians.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Advanced_account.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Financial_Management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marketing_Management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Financial_Management1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Introductry_Management.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Intelligent_investor.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dad_Book.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Psychology_Money.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Think_Groww.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Good_Great.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Atomic_Habits.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1643122027Os85HlIs9y1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\259274161.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\414Ja4rUzBL1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71+cVRf+GHL._UF1000,1000_QL80_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Overdue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin1.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
